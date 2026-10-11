@@ -6,7 +6,7 @@ st.set_page_config(page_title="Student Performance Predictor", page_icon="🎓",
 
 @st.cache_resource
 def load_bundle():
-    return joblib.load("models/bundle.joblib")
+    return joblib.load("bundle.joblib")
 
 bundle = load_bundle()
 COLUMNS = bundle["columns"]
